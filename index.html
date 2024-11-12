@@ -100,7 +100,10 @@
         <section>
             <h2>Projects</h2>
             <ul class="projects-list">
-                <li><strong>Project Name:</strong> Brief description of the project, technologies used, and outcomes.</li>
+                <li><strong>Self-Service Portal:</strong>Designed and implemented a self-service portal for managing IIS and server services, improving operational independence for teams and reducing dependency on DevOps engineers.</li>
+                <li><strong>Monitoring Setup: </strong>Configured Grafana dashboards integrated with Prometheus and InfluxDB to provide real-time visibility into server metrics, significantly enhancing proactive issue detection.</li>
+                <li><strong>Infrastructure Checklist: </strong>Built a web application using python/Flask to provide a simpler way of doing morning checks and then tied that into service desk plus (SD+) and Teams.  Project uploaded to Github repo.</li>
+                <li><strong>Event Driven Automation: </strong>I designed and built a listener in Python/Flask to receive webhook posts from Grafana Alerting to successfully hook into Gitlab API and start a pipeline.  For example, I created a project in Gitlab which was an Ansible playbook to gracefully reboot an Elasticsearch cluster if the API became overwhelmed.  The alert in Grafana would be configured with the jobID from Gitlab and would be posted to the service I built which would then execute that job in Gitlab to successfully reboot the cluster based off a threshold set in Grafana.</li>
                 <!-- Add more projects as needed -->
             </ul>
         </section>
